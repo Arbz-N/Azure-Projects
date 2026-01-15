@@ -36,32 +36,3 @@ Below is the list of projects included in this repository. New projects will be 
     Follow the instructions inside each project folder to deploy or run the project on Azure.
 
 
-Azure Components Summary
-
-  Component	                    Purpose
-Resource Group	        Container for all resources
-Virtual Network	        Logical isolated network
-Subnets	                Default → VM, BastionSubnet → Bastion, FirewallSubnet → Firewall
-Bastion Host	        Secure admin access without public IP
-Linux VM	            Private server running Nginx
-Azure Firewall	        Protects VNet, controls inbound/outbound traffic
-DNAT Rule	            Exposes private VM service securely to internet
-
-
-Key Notes
-
-    Bastion: Admin access only, not for public web traffic
-    Azure Firewall: Securely exposes services like Nginx
-    DNAT: Maps firewall public port → VM private port
-    Priority Rules: Determines traffic matching order
-
-
-Cleanup / Delete Resources
-To avoid extra charges, delete all Azure resources created for this project in the correct order
-1. Virtual Machine (VM)
-2. Public IPs (if any assigned manually)
-3. Azure Bastion
-4. Azure Firewall
-5. Subnets
-6. Virtual Network (VNet)
-7. Resource Group
