@@ -91,3 +91,4 @@ Internet → Firewall Public IP:4000 → DNAT → VM:80 → Response via Firewal
 Open browser → http://<Firewall_Public_IP>:4000
 Nginx page should display:
 This is a VM without a public IP, connected via Bastion and behind Azure Firewall
+
