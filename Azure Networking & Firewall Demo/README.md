@@ -69,6 +69,25 @@ SSH into VM via Bastion and run:
 ```bash
 sudo apt update
 sudo apt install nginx -y
-sudo tee /var/www/html/index.html <<EOF
-<h1>This is a VM without a public IP, connected via Bastion and behind Azure Firewall</h1>
-EOF
+and copy the index.html to /var/www/html/index.html 
+
+8️⃣ Configure Firewall DNAT Rule
+
+Go to Firewall → Firewall Policy → Rules → DNAT
+Create Rule Collection: firewall-nginx-rule
+Add Rule: nginx-rule
+Source IP: Any or your public IP
+Destination IP: Firewall Public IP
+Protocol: TCP
+Destination Port: 4000 (browser)
+Translated Address: VM Private IP (10.0.0.4)
+Translated Port: 80 (Nginx port)
+
+Flow:
+Internet → Firewall Public IP:4000 → DNAT → VM:80 → Response via Firewall
+
+9️⃣ Test Access
+
+Open browser → http://<Firewall_Public_IP>:4000
+Nginx page should display:
+This is a VM without a public IP, connected via Bastion and behind Azure Firewall
