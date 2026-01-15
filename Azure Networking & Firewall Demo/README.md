@@ -1,6 +1,6 @@
 # Azure Networking & Firewall Demo
 
-![Azure Networking](C:/Users/arbaz/PycharmProjects/github-projects/Azure-Projects/assets/1.Azure_Networking_&_Firewall_Demo.png)  
+![Azure Networking](./assets/azure_projects_banner.png)  
 
 ---
 
