@@ -1,6 +1,6 @@
 # 🌐 Azure Projects Repository
 
-![Azure Projects](./azure_projects_banner.png)  
+![Azure Projects](./assets/azure_projects_banner.png) 
 *Professional Azure projects collection for hands-on learning, demos, and real-world implementations.*
 
 ---
