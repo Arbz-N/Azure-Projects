@@ -22,6 +22,11 @@ Below is the list of projects included in this repository. New projects will be 
    - **Key Services:** Virtual Machine, Azure Bastion, Azure Firewall, Nginx, DNAT.  
    - **Folder:** `AzureNetworking-Firewall-Demo`
 
+2. **[Azure Point-to-Site VPN & Private VM Demo](./Azure-Point-to-Site-VPN-Demo)**  
+   - **Description:** Demonstrates a private Linux VM running Nginx without a public IP, securely accessed via Point-to-Site VPN through an Azure Virtual Network Gateway (IKEv2/OpenVPN) with certificate-based authentication.  
+   - **Key Services:** Virtual Network (VNet), GatewaySubnet, Azure VPN Gateway, Point-to-Site VPN, Linux VM, Nginx.  
+   - **Folder:** `Azure Point-to-Site VPN & Private VM Demo`
+
 
 ---
 
