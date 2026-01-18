@@ -18,7 +18,7 @@ Before starting this project, make sure you have:
 
 - Active **Azure subscription** with permissions to create:
   - Resource Groups
-  - Virtual Networks and Subnets
+  - Virtual Networks and Subnets.
   - VPN Gateways (Azure-VGW)
   - Virtual Machines
 - Basic knowledge of **Linux commands**, SSH, and Azure Portal
