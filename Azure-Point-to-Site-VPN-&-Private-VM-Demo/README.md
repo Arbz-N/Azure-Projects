@@ -12,7 +12,7 @@ The VM runs **Nginx** and serves a custom webpage. This setup ensures all traffi
 
 ---
 
-## 🔹 Prerequisites
+## 🔹 Prerequisites:
 
 Before starting this project, make sure you have:
 
